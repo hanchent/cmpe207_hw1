@@ -19,4 +19,5 @@ main(){
 	    fprintf(f,"printg from parent process with pid = %d \n", pid);
 	}
     }
+    exit(0);
 }
