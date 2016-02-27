@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 	perror("failed on gethostbyname");
 	exit(1);
     }
-    mysocket = socket(AF_INET, SOCK_DGRAM,0); //tcp connection
+    mysocket = socket(AF_INET, SOCK_DGRAM,0); //udp connection
     bzero((char *) &serversockaddr, sizeof(serversockaddr)); 
     serversockaddr.sin_family = AF_INET;
     inet_aton(server->h_addr, &serversockaddr.sin_addr);

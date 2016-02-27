@@ -19,7 +19,7 @@ int main()
     char msg[100];
 	char send_msg[]= "hello client";
     //create socket
-    mysocket = socket(AF_INET, SOCK_DGRAM,0); //tcp connection
+    mysocket = socket(AF_INET, SOCK_DGRAM,0); //udp connection
     //bind socket to addr
     my_sockaddr.sin_family = AF_INET;
     my_sockaddr.sin_addr.s_addr = INADDR_ANY;
