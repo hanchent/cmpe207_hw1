@@ -15,4 +15,4 @@ sum.o: sum.c
 72_HW1_Q4_udp_server.o: 72_HW1_Q4_udp_server.c
 	gcc 72_HW1_Q4_udp_server.c -o 72_HW1_Q4_udp_server.o
 clean: 
-	rm *o *_result
+	rm *o

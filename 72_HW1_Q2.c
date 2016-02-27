@@ -1,12 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <unistd.h>
 
-main(){
+int main(){
     int pid;
     pid = fork();
     if (pid == 0){ //child
-	execve("sum.o");
+		execve("sum.o",NULL,NULL);
     }else { // parent
-	exit(0);
+	//exit(0);
+		return 0;
     }
 }

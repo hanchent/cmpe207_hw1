@@ -3,6 +3,7 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <unistd.h>
 
 #define PORT_NUM 8000  //pick 8000 as the port number
 
@@ -11,7 +12,7 @@ int main()
     int mysocket, newsocket;
     int bind_rtn;
     struct sockaddr_in my_sockaddr, new_sockaddr;
-    int new_sockaddr_len;
+    unsigned int new_sockaddr_len;
     char msg[] = "got msg from server: hello client";
     //create socket
     mysocket = socket(AF_INET, SOCK_STREAM,0); //tcp connection

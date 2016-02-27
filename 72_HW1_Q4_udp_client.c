@@ -6,6 +6,7 @@
 #include <netdb.h>
 #include <arpa/inet.h>
 #include <string.h>
+#include <unistd.h>
 
 #define PORT_NUM 8000  //pick 8000 as the port number
 
@@ -15,7 +16,7 @@ int main(int argc, char *argv[])
     int connect_rtn;
     struct hostent *server;
     struct sockaddr_in serversockaddr;
-    int serversock_len;
+    unsigned int serversock_len;
     char msg[] = "hello server";
     char recv_msg[100];
     if (argc != 2){

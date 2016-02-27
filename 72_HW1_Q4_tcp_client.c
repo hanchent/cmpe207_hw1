@@ -6,6 +6,7 @@
 #include <netdb.h>
 #include <arpa/inet.h>
 #include <string.h>
+#include <unistd.h>
 
 #define PORT_NUM 8000  //pick 8000 as the port number
 
